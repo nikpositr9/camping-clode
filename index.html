@@ -25,4 +25,17 @@
 <section class="section"><div class="section-head"><h2>Доставка и вопросы</h2></div><div class="faq"><div class="q">Сколько идёт доставка? <b>⌄</b></div><div class="q">Как выбрать палатку? <b>⌄</b></div><div class="q">Есть ли гарантия? <b>⌄</b></div><div class="q">Можно ли вернуть товар? <b>⌄</b></div></div></section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-grid"><div><div class="brand" style="color:#fff">CAMP<span>NORTH</span></div><p>Снаряжение для кемпинга<br>и жизни вне города</p></div><div><h3>Каталог</h3><a>Палатки</a><a>Мебель</a><a>Энергия и свет</a><a>Аксессуары</a></div><div><h3>Покупателям</h3><a>Доставка и оплата</a><a>Возврат</a><a>Гарантия</a><a>Политика конфиденциальности</a></div><div><h3>Контакты</h3><p>+373 69 000 000<br>hello@campnorth.md<br>Telegram · WhatsApp</p></div></div><div class="note">© 2026 CampNorth · Все права защищены</div></div></footer>
+<script>
+// В карточках используются отдельные изображения, а не общий лист товаров.
+const productImages = [
+  'tent-inflatable.png','tent-classic.png','tent-roof.png','tent-inflatable.png',
+  'power-station.png','solar-panel.png','lantern.png',
+  'chair.png','table.png','cookware.png','solar-panel.png'
+];
+document.querySelectorAll('.product-img img').forEach((img, index) => {
+  if (productImages[index]) img.src = productImages[index];
+  img.style.objectFit = 'contain';
+  img.style.objectPosition = 'center';
+});
+</script>
 </body></html>
